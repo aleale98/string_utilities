@@ -49,7 +49,7 @@ char *str_replace(char to_replace, char *replacement, char *str, size_t replacem
 }
 
 int *substring(char *str, char *substr, size_t substr_length){ 
-    int *indexes = (int*)malloc(sizeof(int));
+    int *indexes = (int*)malloc(2*sizeof(int));
     indexes[0] = 0;
     indexes[1] = 0;
     int str_index = 0;
